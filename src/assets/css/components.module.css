@@ -22,7 +22,7 @@
 }
 
 .columns1{
-	justify-content: end;
+	justify-content: flex-end;
 	align-items: unset;
 }
 
@@ -53,5 +53,5 @@ p{
 	border: 2px dashed gray;
 	min-height: 150px;
 	display: flex;
-	justify-content: end;
+	justify-content: flex-end;
 }

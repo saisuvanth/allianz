@@ -5,6 +5,7 @@ import styles from './assets/css/components.module.css';
 
 function App() {
   const [data1,setData1]=useState([{name:'A',number:1},{name:'B',number:2},{name:'C',number:3},{name:'D',number:4},{name:'E',number:5}]);
+  // eslint-disable-next-line no-unused-vars
   const [data2,setData2]=useState(['+','-','*','/','','>','<','=']);
   const [data3,setData3]=useState([]);
   const [show, setShow] = useState(false);
@@ -18,7 +19,6 @@ function App() {
   useEffect(()=>{
     fetch('https://allianzz.herokuapp.com/').then(res=>res.json()).then(json=>{
       setData1(json);
-      console.log(data1);
     });
   },[]);
 
