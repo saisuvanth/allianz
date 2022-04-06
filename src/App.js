@@ -16,7 +16,7 @@ function App() {
   const handleShow = () => setShow(true);
 
   useEffect(()=>{
-    fetch('http://localhost:3001').then(res=>res.json()).then(json=>{
+    fetch('https://allianzz.herokuapp.com/').then(res=>res.json()).then(json=>{
       setData1(json);
       console.log(data1);
     });
